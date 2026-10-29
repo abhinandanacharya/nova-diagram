@@ -1,0 +1,18 @@
+sequenceDiagram
+  autonumber
+  participant U as Customer
+  participant W as Web App
+  participant O as Order Service
+  participant P as Payment Gateway
+  U->>W: Click "Pay now"
+  W->>O: Create order
+  O->>P: Charge card
+  alt payment succeeds
+    P-->>O: Success
+    O-->>W: Order confirmed
+    W-->>U: Show receipt
+  else payment fails
+    P-->>O: Declined
+    O-->>W: Payment failed
+    W-->>U: Ask for another method
+  end

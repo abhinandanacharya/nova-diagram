@@ -1,0 +1,12 @@
+flowchart TD
+  A([User opens app]) --> B{Has valid session?}
+  B -->|Yes| C[Show dashboard]
+  B -->|No| D[Show login form]
+  D --> E["Submit credentials (HTTPS)"]
+  E --> F{Credentials valid?}
+  F -->|Yes| G[Issue JWT + refresh token]
+  F -->|No| H[Show error, count attempt]
+  H --> I{Attempts > 5?}
+  I -->|Yes| J[Lock account 15 min]
+  I -->|No| D
+  G --> C

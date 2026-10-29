@@ -1,0 +1,11 @@
+{
+  "name": "nova-diagram",
+  "owner": { "name": "Abhinandan Acharya" },
+  "plugins": [
+    {
+      "name": "nova-diagram",
+      "source": "./",
+      "description": "Prompt-to-diagram plugin: flowcharts, sequence, ER, class, state, Gantt, mindmap and architecture diagrams as Mermaid, exported to HTML/SVG/PNG."
+    }
+  ]
+}

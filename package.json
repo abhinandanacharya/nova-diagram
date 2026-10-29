@@ -1,0 +1,16 @@
+{
+  "name": "nova-diagram",
+  "version": "1.0.0",
+  "description": "Claude plugin that turns plain-English prompts into flowcharts, sequence, ER, architecture and other diagrams (Mermaid). Zero dependencies.",
+  "type": "module",
+  "bin": { "nova-diagram-mcp": "mcp/server.js" },
+  "scripts": {
+    "test": "node --test",
+    "start": "node mcp/server.js"
+  },
+  "engines": { "node": ">=18" },
+  "keywords": ["claude", "claude-code", "plugin", "mcp", "mermaid", "diagram", "flowchart"],
+  "author": "Abhinandan Acharya",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/abhinandanacharya/nova-diagram.git" }
+}

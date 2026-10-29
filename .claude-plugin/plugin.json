@@ -1,0 +1,10 @@
+{
+  "name": "nova-diagram",
+  "version": "1.0.0",
+  "description": "Turn a plain-English prompt into flowcharts, sequence diagrams, ER diagrams, architecture and other design visuals. Zero-dependency Mermaid renderer included.",
+  "author": { "name": "Abhinandan Acharya", "url": "https://github.com/abhinandanacharya" },
+  "homepage": "https://github.com/abhinandanacharya/nova-diagram",
+  "repository": "https://github.com/abhinandanacharya/nova-diagram",
+  "license": "MIT",
+  "keywords": ["diagram", "flowchart", "mermaid", "architecture", "sequence-diagram", "er-diagram", "visualization"]
+}
